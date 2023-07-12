@@ -9,6 +9,22 @@ The pipeline consists of interconnected steps, each of which is responsible for 
 3. Finding and removing outliers
 or encoding categorical variables
 
+## How to Fill Missing Values in a Dataset ?
+
+Choosing between Mean, Median, and Mode to fill in missing values in a dataset depends on the data you are working with. 
+
+1. **Mean:** When your dataset is in a normal distribution, you can use mean to fill in the missing values.
+
+2. **Median:** When your dataset is not in a normal distribution, you can use the median value to fill in the missing values.
+
+3. **Mode:** When the missing values in your data are categorical and discrete, you can use the mode value to fill in the missing values.
+
+So the first step is to see if your data has missing values. If your data has missing values, you need to check the distribution of each numerical variable (with missing values). If the values in the numerical variables are missing, use the Mean value. 
+
+I the variable is in a normal distribution. Otherwise, choose Median. 
+
+And if the variable is categorical or discrete, you can select mode. So you need to choose a different measure for each variable.
+
 ## Why should we normalize data in machine learning ?
 
 The goal of normalization is to change the values of numeric columns in the dataset to use a common scale, without distorting differences in the ranges of values or losing information. Normalization is also required for some algorithms to model the data correctly.  However, using these techniques may enable the model to give better results, better accuracy and better predictions.
